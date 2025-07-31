@@ -8,4 +8,4 @@ def floor(n: float) -> int:
     '''
     Function Doc
     '''
-    return n // 1
+    return int(n // 1)
