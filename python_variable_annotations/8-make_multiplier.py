@@ -14,5 +14,5 @@ def make_multiplier(multiplier: float) -> typing.Callable[[float], float]:
         Function doc
         '''
         return float(n * multiplier)
-    
+
     return multi
