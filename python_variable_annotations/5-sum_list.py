@@ -2,9 +2,10 @@
 '''
 Module Doc
 '''
+import typing
 
 
-def sum_list(input_list: list[float]) -> float:
+def sum_list(input_list: typing.List[float]) -> float:
     '''
     Function Doc
     '''
