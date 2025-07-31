@@ -5,7 +5,7 @@ Module Doc
 import typing
 
 
-def sum_mixed_list(mxd_lst: typing.List[int | float]) -> float:
+def sum_mixed_list(mxd_lst: typing.List[typing.Union[int, float]]) -> float:
     '''
     Function Doc
     '''
