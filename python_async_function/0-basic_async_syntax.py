@@ -5,7 +5,7 @@ Module Doc
 import random, asyncio
 
 
-async def wait_random(max_delay = 10.0):
+async def wait_random(max_delay: int = 10):
     '''
     Function Doc
     '''
