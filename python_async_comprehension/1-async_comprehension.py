@@ -4,7 +4,7 @@ Module Doc
 '''
 import typing
 import importlib
-async_generator = importlib.import_module('0-async_generator.py').async_generator
+async_generator = importlib.import_module('0-async_generator').async_generator
 
 
 async def async_comprehension() -> typing.List[float]:
