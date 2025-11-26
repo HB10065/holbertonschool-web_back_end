@@ -7,4 +7,4 @@ def floor(n: float) -> int:
     a function that takes a number and
     returns the floor of that number
     '''
-    return round(n)
+    return int(n)
