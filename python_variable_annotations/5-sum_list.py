@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 '''Module Doc'''
+import typing
 
 
-def sum_list(input_list: list[float] = []) -> float:
+def sum_list(input_list: typing.List[float] = []) -> float:
     '''
     Takes a list of floats and returns their sum
     '''
