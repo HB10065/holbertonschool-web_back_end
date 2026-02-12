@@ -3,7 +3,6 @@
 Docstring for pagination.0-simple_helper_function
 '''
 import csv
-import math
 from typing import List
 
 
