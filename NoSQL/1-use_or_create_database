@@ -1,2 +1,2 @@
 // creating or using a database named my_db
-use('my_db')
+use my_db;
