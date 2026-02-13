@@ -1,2 +1,2 @@
 // displays number of documents in the colection school
-db.school.countDocuments()
+print(db.school.countDocuments())
