@@ -40,21 +40,21 @@ class Server:
         return self.__indexed_dataset
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
-            '''Documentation
-            '''
-            dataset = self.indexed_dataset()
-            assert(index < len(dataset))
+        '''Documentation
+        '''
+        dataset = self.indexed_dataset()
+        assert (index < len(dataset))
 
-            data = []
-            for key in sorted(dataset.keys()):
-                if key >= index:
-                    data.append(dataset[key])
-                if len(data) == page_size:
-                    break
+        data = []
+        for key in sorted(dataset.keys()):
+            if key >= index:
+                data.append(dataset[key])
+            if len(data) == page_size:
+                break
 
-            return {
-                'index': index,
-                'data': data,
-                'page_size': page_size,
-                'next_index': index + page_size
-            }
+        return {
+            'index': index,
+            'data': data,
+            'page_size': page_size,
+            'next_index': index + page_size
+        }
