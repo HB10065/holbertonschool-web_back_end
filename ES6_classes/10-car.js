@@ -1,4 +1,4 @@
-expor default class Car {
+export default class Car {
     constructor(brand, motor, color) {
         this._brand = brand;
         this._motor = motor;
@@ -7,6 +7,6 @@ expor default class Car {
     
     // methods
     cloneCar() {
-        return new this.constructor(this._brand, this._motor, this._color)
+        return new this.constructor(this._brand, this._motor, this._color);
     }
 }
