@@ -15,5 +15,5 @@ export default getListStudents() {
             firstName: 'Serena',
             location: 'San Francisco'
         }
-    ]
+    ];
 }
