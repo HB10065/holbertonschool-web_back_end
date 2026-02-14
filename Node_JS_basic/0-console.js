@@ -1,5 +1,3 @@
-function displayMessage(argument){
+export default function displayMessage(argument){
     console.log(argument);
 }
-
-module.exports = displayMessage;
