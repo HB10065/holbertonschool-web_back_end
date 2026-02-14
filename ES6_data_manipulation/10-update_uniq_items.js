@@ -1,5 +1,5 @@
 export default function updateUniqueItems(map) {
-    if (!map instanceof Map()) {
+    if (!map instanceof Map) {
         throw new Error('Cannot process')
     }
 
@@ -8,6 +8,6 @@ export default function updateUniqueItems(map) {
             map.set(key, value)
         }
     }
-    
+
     return map
 }
