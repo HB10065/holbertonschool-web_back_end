@@ -3,9 +3,9 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
 
     const studentsWGrades = studentsByCity.map(student => {
         let grade = 'N/A';
-        for (const gradedStudnet of newGrades) {
-            if (student.id === gradedStudnet.id) {
-                grade = gradedStudnet.grade;
+        for (const gradedStudent of newGrades) {
+            if (student.id === gradedStudent.studentId) {
+                grade = gradedStudent.grade;
             }
         }
 
