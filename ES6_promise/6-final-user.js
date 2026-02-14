@@ -7,14 +7,17 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
         .then((resutls) => {
             return resutls.map((result) => {
                 if (result.status === 'fulfilled'){
-                    return result
+                    return {
+                        status: result.status,
+                        value: result.value
+                    }
                 }
                 if (result.status === 'rejected'){
                     return {
                         status: result.status,
-                        value: result.reason
+                        value: result.reason.toString()
                     }
                 }
-            })
-        })
+            });
+        });
 }
