@@ -1,6 +1,12 @@
 const http = require('http');
 const fs = require('fs');
 
+/**
+ * Counts and groups students from a CSV database file
+ * @param {string} path - Path to the CSV database file
+ * @returns {Promise<Array<string>>} Promise that resolves with array of formatted output lines
+ * @throws {Error} Throws error if database cannot be loaded or is empty
+ */
 function countStudents(path) {
   return new Promise((resolve, reject) => {
     fs.readFile(path, 'utf8', (err, data) => {
@@ -48,8 +54,11 @@ function countStudents(path) {
 }
 
 const args = process.argv.slice(2);
+
 const DATABASE = args[0];
+
 const hostname = '127.0.0.1';
+
 const port = 1245;
 
 const app = http.createServer(async (req, res) => {
